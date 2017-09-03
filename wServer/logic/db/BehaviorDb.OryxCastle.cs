@@ -144,8 +144,8 @@ namespace wServer.logic
                     ),
                     new State("Forever Alone")
                 ),
-                new Threshold(1.0,
-                    new ItemLoot("Ancient Stone Sword", 0.001),
+                new Threshold(0.05,
+                    new ItemLoot("Ancient Stone Sword", 0.01),
                     new ItemLoot("Potion of Defense", 0.5)
             )
             )
@@ -286,8 +286,8 @@ namespace wServer.logic
                     ),
                     new State("Forever Alone")
                 ),
-                new Threshold(1.0,
-                    new ItemLoot("Ancient Stone Sword", 0.001),
+                new Threshold(0.05,
+                    new ItemLoot("Ancient Stone Sword", 0.01),
                     new ItemLoot("Potion of Defense", 0.5)
             )
             )

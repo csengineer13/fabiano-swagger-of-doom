@@ -494,6 +494,22 @@ namespace wServer.logic
                 new TierLoot(1, ItemType.Ability, 0.38),
                 new ItemLoot("Magic Potion", 0.03)
             )
+                .Init("Candy Gnome",
+            new State(
+                new DropPortalOnDeath("Candyland Portal", percent: 90, PortalDespawnTimeSec: 120),
+                new Prioritize(
+                    new StayBack(1.5, 55),
+                    new Wander(1.4)
+                    )
+                ),
+            new Threshold(0.18,
+                new ItemLoot("Red Gumball", 0.5),
+                new ItemLoot("Purple Gumball", 0.5),
+                new ItemLoot("Blue Gumball", 0.5),
+                new ItemLoot("Green Gumball", 0.5),
+                new ItemLoot("Yellow Gumball", 0.5)
+                )
+            )
             .Init("Werelion",
                 new State(
                     new Spawn("Weretiger", 1, coolDown: 23000),

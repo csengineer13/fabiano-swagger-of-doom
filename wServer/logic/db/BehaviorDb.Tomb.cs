@@ -79,19 +79,19 @@ namespace wServer.logic
                         new Shoot(50, 3, 10, 0, coolDown: 4750, coolDownOffset: 500)
                         )
                     ),
-                    new Threshold(0.32,
+                    new Threshold(0.10,
                         new ItemLoot("Potion of Life", 1)
                     ),
                     new Threshold(0.1,
-                        new ItemLoot("Ring of the Pyramid", 0.005),
-                        new ItemLoot("Tome of Holy Protection", 0.005),
-                        new ItemLoot("Wine Cellar Incantation", 0.005)
+                        new ItemLoot("Ring of the Pyramid", 0.01),
+                        new ItemLoot("Tome of Holy Protection", 0.01),
+                        new ItemLoot("Wine Cellar Incantation", 0.15)
                     ),
                     new Threshold(0.2,
                         new EggLoot(EggRarity.Common, 0.1),
                         new EggLoot(EggRarity.Uncommon, 0.05),
                         new EggLoot(EggRarity.Rare, 0.01),
-                        new EggLoot(EggRarity.Legendary, 0.002)
+                        new EggLoot(EggRarity.Legendary, 0.009)
                     )
             )
             .Init("Tomb Support",
@@ -127,18 +127,18 @@ namespace wServer.logic
                         new Taunt("This cannot be! You shall not succeed!")
                         )
                     ),
-                    new Threshold(0.32,
+                    new Threshold(0.1,
                         new ItemLoot("Potion of Life", 1)
                     ),
                     new Threshold(0.1,
-                        new ItemLoot("Ring of the Sphinx", 0.005),
-                        new ItemLoot("Wine Cellar Incantation", 0.005)
+                        new ItemLoot("Ring of the Sphinx", 0.01),
+                        new ItemLoot("Wine Cellar Incantation", 0.15)
                     ),
                     new Threshold(0.2,
                         new EggLoot(EggRarity.Common, 0.1),
                         new EggLoot(EggRarity.Uncommon, 0.05),
                         new EggLoot(EggRarity.Rare, 0.01),
-                        new EggLoot(EggRarity.Legendary, 0.002)
+                        new EggLoot(EggRarity.Legendary, 0.009)
                     )
             )
 
@@ -160,18 +160,18 @@ namespace wServer.logic
                         new Taunt("This cannot be! You shall not succeed!")
                     )
                 ),
-                new Threshold(0.32,
+                new Threshold(0.1,
                         new ItemLoot("Potion of Life", 1)
                 ),
                 new Threshold(0.1,
-                    new ItemLoot("Ring of the Nile", 0.002),
-                    new ItemLoot("Wine Cellar Incantation", 0.002)
+                    new ItemLoot("Ring of the Nile", 0.01),
+                    new ItemLoot("Wine Cellar Incantation", 0.15)
                 ),
                 new Threshold(0.2,
                     new EggLoot(EggRarity.Common, 0.1),
                     new EggLoot(EggRarity.Uncommon, 0.05),
                     new EggLoot(EggRarity.Rare, 0.01),
-                    new EggLoot(EggRarity.Legendary, 0.002)
+                    new EggLoot(EggRarity.Legendary, 0.009)
                 )
             )
 
@@ -260,16 +260,16 @@ namespace wServer.logic
             .Init("Inactive Sarcophagus",
                 new State(
                     new State(
-                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        //new ConditionalEffect(ConditionEffectIndex.Invulnerable),
                         new EntityNotExistsTransition("Beam Priestess", 14, "checkPriest"),
                         new EntityNotExistsTransition("Beam Priest", 1000, "checkPriestess")
                         ),
                     new State("checkPriest",
-                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        //new ConditionalEffect(ConditionEffectIndex.Invulnerable),
                         new EntityNotExistsTransition("Beam Priest", 1000, "activate")
                         ),
                     new State("checkPriestess",
-                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        //new ConditionalEffect(ConditionEffectIndex.Invulnerable),
                         new EntityNotExistsTransition("Beam Priestess", 1000, "activate")
                         ),
                     new State("activate",

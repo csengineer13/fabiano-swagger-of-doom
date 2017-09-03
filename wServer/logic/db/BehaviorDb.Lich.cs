@@ -241,7 +241,11 @@ namespace wServer.logic
                         ),
                     new Decay(130000)
                     ),
-                new ItemLoot("Tincture of Defense", 0.02),
+                new ItemLoot("Tincture of Defense", 0.1),
+                new ItemLoot("The Phylactery", 0.01),
+                new ItemLoot("Soulless Robe", 0.01),
+                new ItemLoot("Soul of the Bearer", 0.01),
+                new ItemLoot("Ring of the Covetous Heart", 0.01),
                 new ItemLoot("Orange Drake Egg", 0.06),
                 new ItemLoot("Magic Potion", 0.03)
             )

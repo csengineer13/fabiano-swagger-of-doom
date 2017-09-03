@@ -19,28 +19,28 @@ namespace wServer.logic
                      new Shoot(25, projectileIndex: 1, count: 1, shootAngle: 0, coolDown: 1, coolDownOffset: 1)
                      )
                  ),
-                 new MostDamagers(1,
+                 new MostDamagers(3,
                     new ItemLoot("Potion of Vitality", 0.9)
                 ),
                 new Threshold(0.025,
                     new TierLoot(8, ItemType.Armor, 0.035),
                     new TierLoot(9, ItemType.Armor, 0.03),
-                    new TierLoot(10, ItemType.Armor, 0.025),
-                    new TierLoot(11, ItemType.Armor, 0.02),
-                    new TierLoot(12, ItemType.Armor, 0.015),
-                    new TierLoot(13, ItemType.Armor, 0.01),
-                    new TierLoot(4, ItemType.Ability, 0.03),
-                    new TierLoot(8, ItemType.Weapon, 0.01),
-                    new TierLoot(9, ItemType.Weapon, 0.01),
-                    new TierLoot(12, ItemType.Weapon, 0.01),
-                    new ItemLoot("Wine Cellar Incantation", 0.01),
-                    new ItemLoot("Leaf Bow", 0.005)
+                    new TierLoot(10, ItemType.Armor, 0.15),
+                    new TierLoot(11, ItemType.Armor, 0.1),
+                    new TierLoot(12, ItemType.Armor, 0.09),
+                    new TierLoot(13, ItemType.Armor, 0.08),
+                    new TierLoot(4, ItemType.Ability, 0.15),
+                    new TierLoot(8, ItemType.Weapon, 0.15),
+                    new TierLoot(9, ItemType.Weapon, 0.1),
+                    new TierLoot(12, ItemType.Weapon, 0.09),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Leaf Bow", 0.01)
                 ),
                 new Threshold(0.2,
                     new EggLoot(EggRarity.Common, 0.1),
                     new EggLoot(EggRarity.Uncommon, 0.05),
                     new EggLoot(EggRarity.Rare, 0.01),
-                    new EggLoot(EggRarity.Legendary, 0.002)
+                    new EggLoot(EggRarity.Legendary, 0.009)
                 )
             )
         .Init("Mini Larva",

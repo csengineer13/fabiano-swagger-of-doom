@@ -25,21 +25,21 @@ namespace wServer.logic
                     LootTemplates.StatIncreasePotionsLoot()
                 ),
                 new Threshold(0.05,
-                    new TierLoot(8, ItemType.Weapon, 0.2),
-                    new TierLoot(9, ItemType.Weapon, 0.03),
-                    new TierLoot(10, ItemType.Weapon, 0.02),
-                    new TierLoot(11, ItemType.Weapon, 0.01),
+                    new TierLoot(8, ItemType.Weapon, 0.15),
+                    new TierLoot(9, ItemType.Weapon, 0.1),
+                    new TierLoot(10, ItemType.Weapon, 0.09),
+                    new TierLoot(11, ItemType.Weapon, 0.08),
                     new TierLoot(3, ItemType.Ring, 0.2),
                     new TierLoot(4, ItemType.Ring, 0.05),
                     new TierLoot(5, ItemType.Ring, 0.01),
                     new TierLoot(7, ItemType.Armor, 0.2),
                     new TierLoot(8, ItemType.Armor, 0.1),
                     new TierLoot(9, ItemType.Armor, 0.03),
-                    new TierLoot(10, ItemType.Armor, 0.02),
-                    new TierLoot(11, ItemType.Armor, 0.01),
+                    new TierLoot(10, ItemType.Armor, 0.15),
+                    new TierLoot(11, ItemType.Armor, 0.1),
                     new TierLoot(4, ItemType.Ability, 0.1),
-                    new TierLoot(5, ItemType.Ability, 0.03),
-                    new ItemLoot("Orb of Conflict", 0.005)
+                    new TierLoot(5, ItemType.Ability, 0.09),
+                    new ItemLoot("Orb of Conflict", 0.05)
                 )
             )
             .Init("Red Flaming Skull",
@@ -99,7 +99,7 @@ namespace wServer.logic
                         new InvisiToss("Hermit God Tentacle", 5, 225, 90000001, coolDownOffset: 0),
                         new InvisiToss("Hermit God Tentacle", 5, 270, 90000001, coolDownOffset: 0),
                         new InvisiToss("Hermit God Tentacle", 5, 315, 90000001, coolDownOffset: 0),
-                        //new InvisiToss("Hermit God Drop", 5, 0, coolDown: 90000001, coolDownOffset: 0),
+                        new InvisiToss("Hermit God Drop", 5, 0, coolDown: 90000001, coolDownOffset: 0),
 
                         //new Spawn("Hermit God Tentacle", 8, 8, coolDown:9000001),
                         new TimedTransition(1000, "check")
@@ -177,14 +177,14 @@ namespace wServer.logic
                         new Suicide()
                         )
                     ),
-                new MostDamagers(3,
+                new MostDamagers(4,
                     new OnlyOne(
                         new ItemLoot("Potion of Dexterity", 1),
                         new ItemLoot("Potion of Vitality", 1)
                     )
                 ),
                 new Threshold(0.05,
-                    new ItemLoot("Helm of the Juggernaut", 0.005)
+                    new ItemLoot("Helm of the Juggernaut", 0.01)
                 )
             );
             #endregion

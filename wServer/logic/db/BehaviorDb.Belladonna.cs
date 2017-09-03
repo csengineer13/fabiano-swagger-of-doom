@@ -331,14 +331,14 @@ namespace wServer.logic
                     new State("UnsetEffect")
                 ),
                 new Threshold(0.1,
-                    new ItemLoot("Diamond Bladed Katana", 0.1),
-                    new ItemLoot("Cupid's Bow", 0.1),
-                    new ItemLoot("Staff of Adoration", 0.1),
-                    new ItemLoot("Wand of Budding Romance", 0.1),
-                    new ItemLoot("Heartfind Dagger", 0.1),
-                    new ItemLoot("Vinesword", 0.1),
-                    new ItemLoot("Bashing Bride Skin", 0.02),
-                    new ItemLoot("Eligible Bachelor Skin", 0.02)
+                    new ItemLoot("Diamond Bladed Katana", 0.15),
+                    new ItemLoot("Cupid's Bow", 0.15),
+                    new ItemLoot("Staff of Adoration", 0.15),
+                    new ItemLoot("Wand of Budding Romance", 0.15),
+                    new ItemLoot("Heartfind Dagger", 0.15),
+                    new ItemLoot("Vinesword", 0.15),
+                    new ItemLoot("Bashing Bride Skin", 0.09),
+                    new ItemLoot("Eligible Bachelor Skin", 0.09)
                 )
             );
     }

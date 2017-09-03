@@ -256,7 +256,7 @@ namespace wServer.logic
                 new ItemLoot("Magic Potion", 0.25),
                 new ItemLoot("Tincture of Life", 0.06),
                 new ItemLoot("Green Drake Egg", 0.08),
-                new ItemLoot("Quiver of Thunder", 0.002),
+                new ItemLoot("Quiver of Thunder", 0.009),
                 new TierLoot(8, ItemType.Armor, 0.3)
             )
             ;

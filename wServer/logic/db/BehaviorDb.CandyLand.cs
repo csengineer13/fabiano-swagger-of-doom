@@ -6,22 +6,6 @@ namespace wServer.logic
     partial class BehaviorDb
     {
         private _ CandyLand = () => Behav()
-        .Init("Candy Gnome",
-            new State(
-                new DropPortalOnDeath("Candyland Portal", percent: 50, PortalDespawnTimeSec: 120),
-                new Prioritize(
-                    new StayBack(1.5, 55),
-                    new Wander(1.4)
-                    )
-                ),
-            new Threshold(0.18,
-                new ItemLoot("Red Gumball", 0.5),
-                new ItemLoot("Purple Gumball", 0.5),
-                new ItemLoot("Blue Gumball", 0.5),
-                new ItemLoot("Green Gumball", 0.5),
-                new ItemLoot("Yellow Gumball", 0.5)
-                )
-            )
             .Init("Desire Troll",
                 new State(
                     new Wander(0.5),
@@ -39,21 +23,21 @@ namespace wServer.logic
                 new TierLoot(3, ItemType.Ring, 0.015),
                 new TierLoot(4, ItemType.Ring, 0.005),
                 new Threshold(0.18,
-                    new ItemLoot("Potion of Defense", 0.02),
-                    new ItemLoot("Potion of Attack", 0.02),
+                    new ItemLoot("Potion of Defense", 0.07),
+                    new ItemLoot("Potion of Attack", 0.07),
                     new ItemLoot("Yellow Gumball", 0.3),
                     new ItemLoot("Green Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
                     new ItemLoot("Red Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
-                    new ItemLoot("Fairy Plate", 0.009),
-                    new ItemLoot("Pixie-Enchanted Sword", 0.009),
-                    new ItemLoot("Seal of the Enchanted Forest", 0.009),
-                    new ItemLoot("Candy-Coated Armor", 0.01),
-                    new ItemLoot("Wine Cellar Incantation", 0.01),
-                    new ItemLoot("Ring of Pure Wishes", 0.009),
-                    new ItemLoot("Potion of Attack", 0.005),
-                    new ItemLoot("Potion of Wisdom", 0.005)
+                    new ItemLoot("Fairy Plate", 0.05),
+                    new ItemLoot("Pixie-Enchanted Sword", 0.02),
+                    new ItemLoot("Seal of the Enchanted Forest", 0.05),
+                    new ItemLoot("Candy-Coated Armor", 0.1),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Ring of Pure Wishes", 0.05),
+                    new ItemLoot("Potion of Attack", 0.09),
+                    new ItemLoot("Potion of Wisdom", 0.09)
                 )
             )
             .Init("Gigacorn",
@@ -76,20 +60,21 @@ namespace wServer.logic
                 new TierLoot(3, ItemType.Ring, 0.015),
                 new TierLoot(4, ItemType.Ring, 0.005),
                 new Threshold(0.18,
-                    new ItemLoot("Potion of Defense", 0.02),
-                    new ItemLoot("Potion of Attack", 0.02),
+                    new ItemLoot("Potion of Defense", 0.07),
+                    new ItemLoot("Potion of Attack", 0.07),
                     new ItemLoot("Yellow Gumball", 0.3),
                     new ItemLoot("Green Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
                     new ItemLoot("Red Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
-                    new ItemLoot("Fairy Plate", 0.009),
-                    new ItemLoot("Pixie-Enchanted Sword", 0.009),
-                    new ItemLoot("Seal of the Enchanted Forest", 0.009),
-                    new ItemLoot("Candy-Coated Armor", 0.01),
-                    new ItemLoot("Wine Cellar Incantation", 0.01),
-                    new ItemLoot("Ring of Pure Wishes", 0.009),
-                    new ItemLoot("Potion of Defense", 0.005)
+                    new ItemLoot("Fairy Plate", 0.05),
+                    new ItemLoot("Pixie-Enchanted Sword", 0.02),
+                    new ItemLoot("Seal of the Enchanted Forest", 0.05),
+                    new ItemLoot("Candy-Coated Armor", 0.1),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Ring of Pure Wishes", 0.05),
+                    new ItemLoot("Potion of Attack", 0.09),
+                    new ItemLoot("Potion of Wisdom", 0.09)
                 )
             )
             .Init("Spoiled Creampuff",
@@ -107,19 +92,21 @@ namespace wServer.logic
                 new TierLoot(3, ItemType.Ring, 0.015),
                 new TierLoot(4, ItemType.Ring, 0.005),
                 new Threshold(0.18,
-                    new ItemLoot("Potion of Defense", 0.02),
-                    new ItemLoot("Potion of Attack", 0.02),
+                    new ItemLoot("Potion of Defense", 0.07),
+                    new ItemLoot("Potion of Attack", 0.07),
                     new ItemLoot("Yellow Gumball", 0.3),
                     new ItemLoot("Green Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
                     new ItemLoot("Red Gumball", 0.3),
                     new ItemLoot("Blue Gumball", 0.3),
-                    new ItemLoot("Fairy Plate", 0.009),
-                    new ItemLoot("Pixie-Enchanted Sword", 0.009),
-                    new ItemLoot("Seal of the Enchanted Forest", 0.009),
-                    new ItemLoot("Candy-Coated Armor", 0.01),
-                    new ItemLoot("Ring of Pure Wishes", 0.009),
-                    new ItemLoot("Potion of Defense", 0.005)
+                    new ItemLoot("Fairy Plate", 0.05),
+                    new ItemLoot("Pixie-Enchanted Sword", 0.02),
+                    new ItemLoot("Seal of the Enchanted Forest", 0.05),
+                    new ItemLoot("Candy-Coated Armor", 0.1),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Ring of Pure Wishes", 0.05),
+                    new ItemLoot("Potion of Attack", 0.09),
+                    new ItemLoot("Potion of Wisdom", 0.09)
                 )
             )
             .Init("Big Creampuff",

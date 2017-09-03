@@ -69,14 +69,14 @@ namespace wServer.logic
                     new ItemLoot("Potion of Defense", 1.0)
                 ),
                 new Threshold(0.025,
-                    new TierLoot(9, ItemType.Weapon, 0.1),
-                    new TierLoot(4, ItemType.Ability, 0.1),
-                    new TierLoot(9, ItemType.Armor, 0.1),
-                    new TierLoot(3, ItemType.Ring, 0.05),
-                    new TierLoot(10, ItemType.Armor, 0.05),
-                    new TierLoot(10, ItemType.Weapon, 0.05),
-                    new TierLoot(4, ItemType.Ring, 0.025),
-                    new ItemLoot("Demon Blade", 0.01)
+                    new TierLoot(9, ItemType.Weapon, 0.15),
+                    new TierLoot(4, ItemType.Ability, 0.15),
+                    new TierLoot(9, ItemType.Armor, 0.15),
+                    new TierLoot(3, ItemType.Ring, 0.15),
+                    new TierLoot(10, ItemType.Armor, 0.1),
+                    new TierLoot(10, ItemType.Weapon, 0.1),
+                    new TierLoot(4, ItemType.Ring, 0.1),
+                    new ItemLoot("Demon Blade", 0.05)
                 )
             )
             .Init("Malphas Missile",

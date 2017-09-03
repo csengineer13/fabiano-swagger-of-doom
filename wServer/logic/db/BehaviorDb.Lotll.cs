@@ -75,19 +75,19 @@ namespace wServer.logic
                     LootTemplates.StatIncreasePotionsLoot()
                 ),
                 new Threshold(0.05,
-                    new ItemLoot("Shield of Ogmur", 0.005),
+                    new ItemLoot("Shield of Ogmur", 0.01),
                     new TierLoot(8, ItemType.Weapon, 0.2),
                     new TierLoot(9, ItemType.Weapon, 0.175),
                     new TierLoot(10, ItemType.Weapon, 0.125),
-                    new TierLoot(11, ItemType.Weapon, 0.05),
+                    new TierLoot(11, ItemType.Weapon, 0.09),
                     new TierLoot(8, ItemType.Armor, 0.2),
                     new TierLoot(9, ItemType.Armor, 0.175),
                     new TierLoot(10, ItemType.Armor, 0.15),
                     new TierLoot(11, ItemType.Armor, 0.1),
-                    new TierLoot(12, ItemType.Armor, 0.05),
+                    new TierLoot(12, ItemType.Armor, 0.09),
                     new TierLoot(4, ItemType.Ability, 0.15),
                     new TierLoot(5, ItemType.Ability, 0.1),
-                    new TierLoot(5, ItemType.Ring, 0.05)
+                    new TierLoot(5, ItemType.Ring, 0.09)
                 )
             )
             .Init("Protection Crystal",

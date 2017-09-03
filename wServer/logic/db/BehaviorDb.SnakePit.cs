@@ -266,11 +266,11 @@ namespace wServer.logic
                     new ItemLoot("Potion of Speed", 1)
                 ),
                 new Threshold(0.1,
-                    new ItemLoot("Wand of the Bulwark", 0.005),
+                    new ItemLoot("Wand of the Bulwark", 0.05),
                     new ItemLoot("Snake Skin Armor", 0.1),
                     new ItemLoot("Snake Skin Shield", 0.1),
                     new ItemLoot("Snake Eye Ring", 0.1),
-                    new ItemLoot("Wine Cellar Incantation", 0.05),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
                     new TierLoot(9, ItemType.Weapon, 0.2),
                     new TierLoot(10, ItemType.Weapon, 0.1),
                     new TierLoot(8, ItemType.Armor, 0.3),

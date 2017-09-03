@@ -66,7 +66,7 @@ namespace wServer.logic
                         new ItemLoot("Potion of Wisdom", 1)
                     ),
                     new Threshold(0.05,
-                        new ItemLoot("Helm of the Juggernaut", 0.005)
+                        new ItemLoot("Helm of the Juggernaut", 0.01)
                     ),
                     new Threshold(0.1,
                         new OnlyOne(

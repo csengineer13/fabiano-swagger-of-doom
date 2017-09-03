@@ -135,22 +135,21 @@ namespace wServer.logic
             new State("death",
                 new Decay(1000000)
                 )),
-                    new Threshold(0.80,
+                    new Threshold(0.10,
                     new ItemLoot("Potion of Dexterity", 0.5),
                     new ItemLoot("Potion of Speed", 0.5),
                     new ItemLoot("Potion of Attack", 0.5),
                     new ItemLoot("Potion of Vitality", 0.5),
                     new ItemLoot("Potion of Defense", 0.5),
-                    new ItemLoot("Midnight Star", 0.005),
-                    new ItemLoot("Wine Cellar Incantation", 0.005),
-                    new ItemLoot("Platinum Knight Skin", 0.02),
-                    new TierLoot(13, ItemType.Armor, 0.02),
-                    new TierLoot(12, ItemType.Weapon, 0.02),
+                    new ItemLoot("Midnight Star", 0.05),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Platinum Knight Skin", 0.03),
+                    new TierLoot(13, ItemType.Armor, 0.03),
+                    new TierLoot(12, ItemType.Weapon, 0.05),
                     new EggLoot(EggRarity.Common, 0.1),
                     new EggLoot(EggRarity.Uncommon, 0.05),
                     new EggLoot(EggRarity.Rare, 0.01),
-                    new EggLoot(EggRarity.Legendary, 0.002)
-
+                    new EggLoot(EggRarity.Legendary, 0.009)
                 )
            )
 

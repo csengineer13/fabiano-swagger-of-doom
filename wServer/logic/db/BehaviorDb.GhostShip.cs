@@ -145,7 +145,7 @@ namespace wServer.logic
                         ))
                     .Init("Ghost Ship",
                 new State(
-                    new DropPortalOnDeath("Davy Jones' Locker Portal", 21),
+                    new DropPortalOnDeath("Davy Jones' Locker Portal", 0),
                     new OnDeathBehavior(
                         new RemoveEntity(100, "Tempest Cloud")
                         ),
@@ -249,16 +249,16 @@ namespace wServer.logic
                     new TierLoot(5, ItemType.Ability, 0.05),
                     new TierLoot(9, ItemType.Armor, 0.1),
                     new TierLoot(3, ItemType.Ring, 0.05),
-                    new TierLoot(10, ItemType.Armor, 0.05),
-                    new TierLoot(11, ItemType.Armor, 0.04),
-                    new TierLoot(10, ItemType.Weapon, 0.05),
-                    new TierLoot(11, ItemType.Weapon, 0.04),
-                    new TierLoot(4, ItemType.Ring, 0.025),
-                    new TierLoot(5, ItemType.Ring, 0.02),
+                    new TierLoot(10, ItemType.Armor, 0.09),
+                    new TierLoot(11, ItemType.Armor, 0.08),
+                    new TierLoot(10, ItemType.Weapon, 0.09),
+                    new TierLoot(11, ItemType.Weapon, 0.08),
+                    new TierLoot(4, ItemType.Ring, 0.1),
+                    new TierLoot(5, ItemType.Ring, 0.09),
                     new EggLoot(EggRarity.Common, 0.05),
                     new EggLoot(EggRarity.Uncommon, 0.025),
                     new EggLoot(EggRarity.Rare, 0.02),
-                    new EggLoot(EggRarity.Legendary, 0.005)
+                    new EggLoot(EggRarity.Legendary, 0.009)
                 )
             )
 

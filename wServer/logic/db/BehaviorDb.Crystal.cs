@@ -226,15 +226,15 @@ namespace wServer.logic
                         new TimedTransition(3000, "Daisy_attack")
                         )
                     ),
-                new Threshold(1,
+                new Threshold(0.3,
                     new ItemLoot("Potion of Vitality", 1)
                 ),
                 new Threshold(0.015,
                     new TierLoot(2, ItemType.Potion, 0.07)
                     ),
                 new Threshold(0.03,
-                    new ItemLoot("Crystal Wand", 0.005),
-                    new ItemLoot("Crystal Sword", 0.006)
+                    new ItemLoot("Crystal Wand", 0.05),
+                    new ItemLoot("Crystal Sword", 0.06)
                     )
             )
             .Init("Crystal Prisoner Clone",

@@ -25,11 +25,12 @@ namespace wServer.realm
         private readonly List<Tuple<string, ISetPiece>> events = new List<Tuple<string, ISetPiece>>
         {
             Tuple.Create("Skull Shrine", (ISetPiece) new SkullShrine()),
+            Tuple.Create("Avatar", (ISetPiece) new Avatar()),
             Tuple.Create("Pentaract", (ISetPiece) new Pentaract()),
             Tuple.Create("Grand Sphinx", (ISetPiece) new Sphinx()),
-            //Lord of the Lost Lands",
-            //"Hermit God",
-            //"Ghost Ship",
+            Tuple.Create("Lord Of The Lost Lands", (ISetPiece) new Graveyard()),
+            Tuple.Create("Hermit God", (ISetPiece) new Hermit()),
+            Tuple.Create("Ghost Ship", (ISetPiece) new GhostShip()),
             Tuple.Create("Cube God", (ISetPiece) new CubeGod()),
         };
 
@@ -123,14 +124,14 @@ namespace wServer.realm
                     WmapTerrain.MidForest, Tuple.Create(
                         150, new[]
                         {
-                            Tuple.Create("Dwarf King", 0.3),
+                            Tuple.Create("Dwarf King", 0.2),
                             Tuple.Create("Metal Golem", 0.05),
                             Tuple.Create("Clockwork Golem", 0.05),
                             Tuple.Create("Werelion", 0.1),
                             Tuple.Create("Horned Drake", 0.3),
                             Tuple.Create("Red Spider", 0.1),
-                            Tuple.Create("Black Bat", 0.1),
-                            Tuple.Create("Candy Gnome", 0.03)
+                            Tuple.Create("Black Bat", 0.15),
+                            Tuple.Create("Candy Gnome", 0.05)
 
                         })
                 },
@@ -178,7 +179,7 @@ namespace wServer.realm
                     100, new []
                     {
                         Tuple.Create("White Demon", 0.1),
-                        Tuple.Create("Sprite God", 0.09),
+                        Tuple.Create("Sprite God", 0.1),
                         Tuple.Create("Medusa", 0.1),
                         Tuple.Create("Ent God", 0.1),
                         Tuple.Create("Beholder", 0.1),
@@ -186,10 +187,10 @@ namespace wServer.realm
                         Tuple.Create("Slime God", 0.09),
                         Tuple.Create("Ghost God", 0.09),
                         Tuple.Create("Rock Bot", 0.05),
-                        Tuple.Create("Djinn", 0.09),
+                        Tuple.Create("Djinn", 0.06),
                         Tuple.Create("Leviathan", 0.09),
-                        Tuple.Create("Mysterios Crystal", 0.02),
-                        Tuple.Create("Arena Headless Horseman", 0.02)
+                        Tuple.Create("Mysterious Crystal", 0.01),
+                        Tuple.Create("Arena Headless Horseman", 0.01)
                     })
                 },
             };
@@ -225,8 +226,9 @@ namespace wServer.realm
             if (CountEnemies(
                 "Lich", "Actual Lich",
                 "Ent Ancient", "Actual Ent Ancient",
-                "Phoenix Reborn",
-                "Oasis Giant", "Cyclops God", "Red Demon",
+                //"Phoenix Reborn",
+                //"Oasis Giant", 
+                "Cyclops God", "Red Demon",
                 "Skull Shrine", "Cube God", "Grand Sphinx", "Hermit God") != 0) return false;
             RealmClosed = true;
             return true;
@@ -287,6 +289,7 @@ namespace wServer.realm
 
         public void Init()
         {
+            world.Timers.Add(new WorldTimer(1500000, (ww, tt) => { InitCloseRealm(); }));
             log.InfoFormat("Oryx is controlling world {0}({1})...", world.Id, world.Name);
             var w = world.Map.Width;
             var h = world.Map.Height;
@@ -356,7 +359,7 @@ namespace wServer.realm
                     BroadcastMsg(msg);
                 }
 
-                if (rand.NextDouble() < 0.25)
+                if (rand.NextDouble() < 0.35)
                 {
                     var evt = events[rand.Next(0, events.Count)];
                     if (

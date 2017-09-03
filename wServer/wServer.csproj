@@ -151,6 +151,7 @@
     <Compile Include="logic\behaviors\PetBehaviors\PetShoot.cs" />
     <Compile Include="logic\behaviors\RemoveEntity.cs" />
     <Compile Include="logic\db\BehaviorDb.Abyss.cs" />
+    <Compile Include="logic\db\BehaviorDb.Avatar.cs" />
     <Compile Include="logic\db\BehaviorDb.CandyLand.cs" />
     <Compile Include="logic\db\BehaviorDb.Draconis.cs" />
     <Compile Include="logic\db\BehaviorDb.Drakes.cs" />
@@ -213,7 +214,6 @@
     <Compile Include="logic\behaviors\Wander.cs" />
     <Compile Include="logic\Cooldown.cs" />
     <Compile Include="logic\DamageCounter.cs" />
-    <Compile Include="logic\db\BehaviorDb.Avatar.cs" />
     <Compile Include="logic\db\BehaviorDb.Beachzone.cs" />
     <Compile Include="logic\db\BehaviorDb.Belladonna.cs" />
     <Compile Include="logic\db\BehaviorDb.OryxChicken.cs" />
@@ -525,6 +525,7 @@
     <Compile Include="networking\svrPackets\UpdatePacket.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Vector2.cs" />
+    <Compile Include="WorldMapExporter.cs" />
     <Compile Include="wRandom.cs" />
     <Compile Include="networking\handlers\AoEAckHandler.cs" />
   </ItemGroup>
@@ -617,6 +618,7 @@
     <EmbeddedResource Include="realm\worlds\maps\IvoryWyvern.wmap" />
     <None Include="realm\worlds\maps\IvoryWyvern.jm" />
     <None Include="realm\worlds\maps\OryxsChamber.jm" />
+    <EmbeddedResource Include="realm\worlds\maps\spriteworld.jm" />
     <None Include="wServer.local.cfg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

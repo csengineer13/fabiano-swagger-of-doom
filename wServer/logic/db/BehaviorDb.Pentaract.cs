@@ -61,22 +61,22 @@ namespace wServer.logic
                     new ItemLoot("Potion of Wisdom", 0.5)
                 ),
                 new Threshold(0.1,
-                    new ItemLoot("Seal of Blasphemous Prayer", 0.001),
+                    new ItemLoot("Seal of Blasphemous Prayer", 0.05),
 
-                    new TierLoot(11, ItemType.Weapon, 0.005),
-                    new TierLoot(11, ItemType.Armor, 0.005),
-                    new TierLoot(5, ItemType.Ring, 0.005),
+                    new TierLoot(11, ItemType.Weapon, 0.09),
+                    new TierLoot(11, ItemType.Armor, 0.09),
+                    new TierLoot(5, ItemType.Ring, 0.09),
 
-                    new TierLoot(10, ItemType.Weapon, 0.01),
-                    new TierLoot(10, ItemType.Armor, 0.01),
+                    new TierLoot(10, ItemType.Weapon, 0.1),
+                    new TierLoot(10, ItemType.Armor, 0.1),
 
-                    new TierLoot(9, ItemType.Weapon, 0.02),
-                    new TierLoot(5, ItemType.Ability, 0.02),
-                    new TierLoot(9, ItemType.Armor, 0.02),
+                    new TierLoot(9, ItemType.Weapon, 0.15),
+                    new TierLoot(5, ItemType.Ability, 0.15),
+                    new TierLoot(9, ItemType.Armor, 0.15),
 
-                    new ItemLoot("Potion of Attack", 0.1),
-                    new ItemLoot("Potion of Vitality", 0.1),
-                    new ItemLoot("Potion of Dexterity", 0.1),
+                    new ItemLoot("Potion of Attack", 0.3),
+                    new ItemLoot("Potion of Vitality", 0.3),
+                    new ItemLoot("Potion of Dexterity", 0.3),
 
                     new TierLoot(4, ItemType.Ability, 0.05),
                     new TierLoot(8, ItemType.Armor, 0.05),

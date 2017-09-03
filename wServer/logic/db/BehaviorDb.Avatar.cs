@@ -2,6 +2,7 @@
 
 using wServer.logic.behaviors;
 using wServer.logic.transitions;
+using wServer.logic.loot;
 
 #endregion
 
@@ -12,7 +13,7 @@ namespace wServer.logic
         private _ Avatar = () => Behav()
             .Init("shtrs Defense System",
                 new State(
-                    new DropPortalOnDeath("The Shatters", percent: 65, dropDelaySec: 2, XAdjustment: 0, YAdjustment: 2, PortalDespawnTimeSec: 70),
+                    new DropPortalOnDeath("The Shatters", percent: 95, dropDelaySec: 2, XAdjustment: 0, YAdjustment: 2, PortalDespawnTimeSec: 70),
                     new ChangeGroundOnDeath(new[] { "Pure Evil" }, new[] { "shtrs Disaster Floor", "shtrs Shattered Floor" },
                     30),
                     new State("stars",
@@ -1521,7 +1522,26 @@ namespace wServer.logic
                             )
                         )
                         )
-                    )
+                    ),
+
+                new MostDamagers(3,
+                    new ItemLoot("Potion of Vitality", 1.0),
+                    new ItemLoot("Potion of Speed", 0.5),
+                    new ItemLoot("Potion of Dexterity", 0.3)
+                ),
+
+            new Threshold(0.03,
+                    new TierLoot(11, ItemType.Weapon, 0.15),
+                    new TierLoot(6, ItemType.Ability, 0.1),
+                    new TierLoot(11, ItemType.Armor, 0.15),
+                    new TierLoot(4, ItemType.Ring, 0.15),
+                    new TierLoot(12, ItemType.Armor, 0.1),
+                    new TierLoot(12, ItemType.Weapon, 0.1),
+                    new TierLoot(5, ItemType.Ring, 0.1),
+                    new EggLoot(EggRarity.Legendary, 0.05),
+                    new ItemLoot("Ancient Spell: Pierce", 0.05)
+                )
+
             )
             .Init("shtrs shadowmans",
                 new State(

@@ -255,8 +255,9 @@ namespace wServer.logic
                 new TierLoot(8, ItemType.Armor, 0.1),
                 new TierLoot(2, ItemType.Ability, 0.7),
                 new TierLoot(3, ItemType.Ability, 0.16),
-                new TierLoot(4, ItemType.Ability, 0.02),
+                new TierLoot(4, ItemType.Ability, 0.1),
                 new ItemLoot("Health Potion", 0.7),
+                new ItemLoot("Quiver of Thunder", 0.01),
                 new ItemLoot("Magic Potion", 0.7)
             )
             .Init("Small Ghost",

@@ -5,15 +5,15 @@
         public SpriteWorld()
         {
             Name = "Sprite World";
-            ClientWorldName = "dungeons.Sprite_World";
+            ClientWorldName = "Sprite World";
             Background = 0;
-            Difficulty = 2;
-            AllowTeleport = true;
+            AllowTeleport = false;
+            Difficulty = 5;
         }
 
         protected override void Init()
         {
-            LoadMap("wServer.realm.worlds.maps.spriteworld.wmap", MapType.Wmap);
+            LoadMap("wServer.realm.worlds.maps.spriteworld.jm", MapType.Json);
         }
     }
 }

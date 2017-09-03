@@ -143,13 +143,14 @@ namespace wServer.logic
                  ),
                     new Threshold(0.32,
                     new ItemLoot("Potion of Dexterity", 1),
-                    new ItemLoot("Potion of Defense", 0.05)
+                    new ItemLoot("Potion of Defense", 0.1)
                 ),
                 new Threshold(0.1,
-                    new ItemLoot("Staff of Extreme Prejudice", 0.005),
-                    new ItemLoot("Cloak of the Planewalker", 0.005),
-                    new ItemLoot("Wine Cellar Incantation", 0.005),
-                    new ItemLoot("Sprite Wand", 0.01),
+                    new ItemLoot("Staff of Extreme Prejudice", 0.05),
+                    new ItemLoot("Cloak of the Planewalker", 0.05),
+                    new ItemLoot("Wine Cellar Incantation", 0.15),
+                    new ItemLoot("Tomb of the Ancients key", 0.05),
+                    new ItemLoot("Sprite Wand", 0.15),
 
                     new TierLoot(3, ItemType.Ring, 0.2),
 
@@ -162,7 +163,7 @@ namespace wServer.logic
                     new EggLoot(EggRarity.Common, 0.1),
                     new EggLoot(EggRarity.Uncommon, 0.05),
                     new EggLoot(EggRarity.Rare, 0.01),
-                    new EggLoot(EggRarity.Legendary, 0.002)
+                    new EggLoot(EggRarity.Legendary, 0.009)
                      )
             )
             )
